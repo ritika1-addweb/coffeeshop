@@ -1,0 +1,8 @@
+uuid: 04c869ed-a4bf-4f72-997b-80e1a1bf3314
+langcode: en
+status: true
+dependencies: {  }
+id: navigation-left
+label: 'Navigation Left'
+description: ''
+locked: false

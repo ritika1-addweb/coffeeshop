@@ -1,0 +1,28 @@
+uuid: 7b500766-9ea4-4b16-8e7e-ba3fea69d9cb
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.footer
+  module:
+    - block_class
+    - system
+  theme:
+    - coffeeshop
+third_party_settings:
+  block_class:
+    classes: social-links
+id: footer_3
+theme: coffeeshop
+region: footer
+weight: 0
+provider: null
+plugin: 'system_menu_block:footer'
+settings:
+  id: 'system_menu_block:footer'
+  label: Footer
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility: {  }

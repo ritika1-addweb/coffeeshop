@@ -1,0 +1,21 @@
+uuid: 6943f954-265c-4eca-b4f2-429dce93ca45
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_menu_item
+    - paragraphs.paragraphs_type.menu_variants
+  module:
+    - text
+id: paragraph.menu_variants.field_menu_item
+field_name: field_menu_item
+entity_type: paragraph
+bundle: menu_variants
+label: 'menu item'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

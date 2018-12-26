@@ -1,0 +1,187 @@
+uuid: 012d2339-2631-4c8c-9872-25dca5e9df35
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.menu.field_menu_category
+    - field.field.node.menu.field_menu_image
+    - field.field.node.menu.field_menu_para
+    - image.style.menu_image
+    - node.type.menu
+  module:
+    - ds
+    - entity_reference_revisions
+    - field_group
+    - image
+    - taxonomy
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_reset
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+    regions:
+      ds_content:
+        - group_container
+        - group_row
+        - group_menu_grid
+        - group_col_md_4
+        - node_title
+        - group_col_md_8
+        - field_menu_image
+        - field_menu_category
+        - group_menu_options
+        - field_menu_para
+    fields:
+      node_title:
+        plugin_id: node_title
+        weight: 21
+        label: hidden
+        formatter: default
+        settings:
+          wrapper: h3
+          class: ''
+          link: false
+  field_group:
+    group_container:
+      children:
+        - group_row
+      parent_name: ''
+      weight: 0
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: container
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+      label: container
+    group_row:
+      children:
+        - group_col_md_4
+        - group_col_md_8
+      parent_name: group_container
+      weight: 20
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: row
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+      label: row
+    group_col_md_4:
+      children:
+        - field_menu_image
+      parent_name: group_row
+      weight: 20
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: col-md-4
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+      label: col-md-4
+    group_col_md_8:
+      children:
+        - group_menu_grid
+      parent_name: group_row
+      weight: 21
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: col-md-8
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+      label: col-md-8
+    group_menu_grid:
+      children:
+        - node_title
+        - field_menu_category
+        - group_menu_options
+      parent_name: group_col_md_8
+      weight: 20
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: menu-grid
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+      label: 'menu grid'
+    group_menu_options:
+      children:
+        - field_menu_para
+      parent_name: group_menu_grid
+      weight: 23
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: 'menu-options full-options'
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+      label: 'menu options'
+id: node.menu.default
+targetEntityType: node
+bundle: menu
+mode: default
+content:
+  field_menu_category:
+    type: entity_reference_rss_category
+    weight: 22
+    region: ds_content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+  field_menu_image:
+    weight: 21
+    label: hidden
+    settings:
+      image_style: menu_image
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: ds_content
+  field_menu_para:
+    type: entity_reference_revisions_entity_view
+    weight: 23
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: ds_content
+hidden:
+  links: true

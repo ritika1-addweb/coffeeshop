@@ -1,0 +1,29 @@
+uuid: 7a4acd1c-81b1-4ae2-9bb3-202fbe9a02f8
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:595990a6-a133-4f09-ae4c-14df4769d550'
+  module:
+    - block_class
+    - block_content
+  theme:
+    - coffeeshop
+third_party_settings:
+  block_class:
+    classes: designed-text
+id: footerdesignedby
+theme: coffeeshop
+region: navigation
+weight: 0
+provider: null
+plugin: 'block_content:595990a6-a133-4f09-ae4c-14df4769d550'
+settings:
+  id: 'block_content:595990a6-a133-4f09-ae4c-14df4769d550'
+  label: 'footer designed by'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

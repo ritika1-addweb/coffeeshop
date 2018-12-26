@@ -1,0 +1,29 @@
+uuid: 58a5de48-5228-4711-92df-3c99400f397f
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:banner:09ec4da6-5ec0-47cf-a4b4-a3efb434bfd1'
+  module:
+    - block_class
+    - block_content
+  theme:
+    - coffeeshop
+third_party_settings:
+  block_class:
+    classes: banner-wrap
+id: welcometobelatte
+theme: coffeeshop
+region: banner
+weight: 0
+provider: null
+plugin: 'block_content:09ec4da6-5ec0-47cf-a4b4-a3efb434bfd1'
+settings:
+  id: 'block_content:09ec4da6-5ec0-47cf-a4b4-a3efb434bfd1'
+  label: 'Welcome to Be Latte'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

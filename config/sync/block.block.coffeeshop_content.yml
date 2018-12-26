@@ -1,0 +1,22 @@
+uuid: 49f4059f-1a50-476d-a909-cf33f5ca14e8
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - coffeeshop
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: coffeeshop_content
+theme: coffeeshop
+region: content
+weight: -7
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

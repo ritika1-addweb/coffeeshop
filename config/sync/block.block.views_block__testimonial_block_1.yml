@@ -1,0 +1,24 @@
+uuid: 3747fe8f-8204-40bf-9f99-e23e456b067f
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.testimonial
+  module:
+    - views
+  theme:
+    - coffeeshop
+id: views_block__testimonial_block_1
+theme: coffeeshop
+region: testimonial
+weight: -6
+provider: null
+plugin: 'views_block:testimonial-block_1'
+settings:
+  id: 'views_block:testimonial-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility: {  }

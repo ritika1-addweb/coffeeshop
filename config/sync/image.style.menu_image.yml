@@ -1,0 +1,14 @@
+uuid: 9edb7ffa-167c-4747-96d1-ff7dd2f9549c
+langcode: en
+status: true
+dependencies: {  }
+name: menu_image
+label: 'menu image'
+effects:
+  b2d678ac-85c4-4747-b327-f02a14bc54e1:
+    uuid: b2d678ac-85c4-4747-b327-f02a14bc54e1
+    id: image_resize
+    weight: 1
+    data:
+      width: 396
+      height: 294

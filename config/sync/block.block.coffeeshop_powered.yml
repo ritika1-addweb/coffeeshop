@@ -1,0 +1,22 @@
+uuid: a28f10b0-0795-4dc9-b67e-50a568e1c1b7
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - coffeeshop
+_core:
+  default_config_hash: jQQUUWN2Uxr5qZtc9zcJKBCxpKY8orN1u2HPqYYRQDI
+id: coffeeshop_powered
+theme: coffeeshop
+region: navigation
+weight: -4
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

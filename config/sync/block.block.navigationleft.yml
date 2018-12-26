@@ -1,0 +1,28 @@
+uuid: 65ac3e4d-ceb9-405b-ba72-ddd781188288
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.navigation-left
+  module:
+    - block_class
+    - system
+  theme:
+    - coffeeshop
+third_party_settings:
+  block_class:
+    classes: first-half-menu
+id: navigationleft
+theme: coffeeshop
+region: navigation_collapsible
+weight: -8
+provider: null
+plugin: 'system_menu_block:navigation-left'
+settings:
+  id: 'system_menu_block:navigation-left'
+  label: 'Navigation Left'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility: {  }

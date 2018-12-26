@@ -1,0 +1,22 @@
+uuid: 3b12e11b-63df-48d7-98d5-8d4e1f6c11ae
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - coffeeshop
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: coffeeshop_messages
+theme: coffeeshop
+region: highlighted
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

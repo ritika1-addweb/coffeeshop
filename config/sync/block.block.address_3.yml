@@ -1,0 +1,25 @@
+uuid: da80d520-dd48-4a79-a553-a784d2d35c5c
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:c90e1552-ced0-4aa1-bea1-f49d64b884fc'
+  module:
+    - block_content
+  theme:
+    - coffeeshop
+id: address_3
+theme: coffeeshop
+region: footer
+weight: 0
+provider: null
+plugin: 'block_content:c90e1552-ced0-4aa1-bea1-f49d64b884fc'
+settings:
+  id: 'block_content:c90e1552-ced0-4aa1-bea1-f49d64b884fc'
+  label: address
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

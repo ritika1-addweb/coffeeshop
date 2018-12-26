@@ -1,0 +1,26 @@
+uuid: 43ec2d52-33cf-41d3-831e-be354f895a05
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.testimonial
+    - field.field.block_content.testimonial.body
+    - field.field.block_content.testimonial.field_testimonial_left_image
+  module:
+    - image
+id: block_content.testimonial.default
+targetEntityType: block_content
+bundle: testimonial
+mode: default
+content:
+  field_testimonial_left_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden:
+  body: true

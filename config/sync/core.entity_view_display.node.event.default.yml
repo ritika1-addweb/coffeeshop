@@ -1,0 +1,182 @@
+uuid: 0b5103c9-669f-4f23-91a1-1ccb4a1b17a7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.event.body
+    - field.field.node.event.field_event_address
+    - field.field.node.event.field_event_date
+    - field.field.node.event.field_event_image
+    - node.type.event
+  module:
+    - address
+    - datetime
+    - ds
+    - field_group
+    - image
+    - text
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_reset
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+    regions:
+      ds_content:
+        - group_event_detail_wrap
+        - group_col_md_4
+        - group_container
+        - links
+        - group_col_md_8
+        - field_event_image
+        - group_row
+        - node_title
+        - field_event_date
+        - field_event_address
+        - body
+    fields:
+      node_title:
+        plugin_id: node_title
+        weight: 22
+        label: hidden
+        formatter: default
+  field_group:
+    group_container:
+      children:
+        - group_row
+      parent_name: group_event_detail_wrap
+      weight: 1
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: container
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+      label: container
+    group_row:
+      children:
+        - group_col_md_4
+        - group_col_md_8
+      parent_name: group_container
+      weight: 20
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: row
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+      label: row
+    group_col_md_4:
+      children:
+        - links
+        - field_event_image
+      parent_name: group_row
+      weight: 1
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: col-md-4
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+      label: col-md-4
+    group_col_md_8:
+      children:
+        - node_title
+        - field_event_date
+        - field_event_address
+        - body
+      parent_name: group_row
+      weight: 2
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: col-md-8
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+      label: col-md-8
+    group_event_detail_wrap:
+      children:
+        - group_container
+      parent_name: ''
+      weight: 0
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: event-detail-wrap
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+      label: event-detail-wrap
+id: node.event.default
+targetEntityType: node
+bundle: event
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 25
+    settings: {  }
+    third_party_settings: {  }
+    region: ds_content
+  field_event_address:
+    weight: 24
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: address_default
+    region: ds_content
+  field_event_date:
+    weight: 23
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: date_medium
+    third_party_settings: {  }
+    type: datetime_default
+    region: ds_content
+  field_event_image:
+    weight: 3
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: ds_content
+  links:
+    weight: 2
+    region: ds_content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

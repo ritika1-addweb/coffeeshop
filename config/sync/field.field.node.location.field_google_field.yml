@@ -1,0 +1,21 @@
+uuid: 3a2d5bc5-05c9-4ab3-a230-fa76e63d2d8c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_google_field
+    - node.type.location
+  module:
+    - google_map_field
+id: node.location.field_google_field
+field_name: field_google_field
+entity_type: node
+bundle: location
+label: 'google field'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: google_map_field

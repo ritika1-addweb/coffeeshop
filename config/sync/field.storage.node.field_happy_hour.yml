@@ -1,0 +1,20 @@
+uuid: 295c4b76-819d-4b09-8bc2-87d606f37a78
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_happy_hour
+field_name: field_happy_hour
+entity_type: node
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

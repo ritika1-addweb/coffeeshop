@@ -1,0 +1,8 @@
+uuid: fc400d02-9767-4f58-a01d-65d36bfd9976
+langcode: en
+status: true
+dependencies: {  }
+id: navigation-right
+label: 'Navigation Right'
+description: ''
+locked: false

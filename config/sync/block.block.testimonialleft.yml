@@ -1,0 +1,25 @@
+uuid: 3927494e-6d48-427c-ac48-1d3669915ef8
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:testimonial:363fa921-ae27-4c91-8fac-640e7bf231e5'
+  module:
+    - block_content
+  theme:
+    - coffeeshop
+id: testimonialleft
+theme: coffeeshop
+region: testimonial
+weight: -7
+provider: null
+plugin: 'block_content:363fa921-ae27-4c91-8fac-640e7bf231e5'
+settings:
+  id: 'block_content:363fa921-ae27-4c91-8fac-640e7bf231e5'
+  label: 'testimonial left'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

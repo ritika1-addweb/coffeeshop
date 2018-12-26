@@ -1,0 +1,86 @@
+uuid: 99ed0a97-90f7-44e3-9a93-0ff7301d6c2f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.menu_variants.field_menu_item
+    - field.field.paragraph.menu_variants.field_menu_item_price
+    - paragraphs.paragraphs_type.menu_variants
+  module:
+    - field_group
+    - text
+third_party_settings:
+  field_group:
+    group_item_wrap:
+      children:
+        - group_item_name
+        - group_it
+      parent_name: ''
+      weight: 0
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: each-item
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+      label: 'item wrap'
+    group_item_name:
+      children:
+        - field_menu_item
+      parent_name: group_item_wrap
+      weight: 20
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: item-name
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+      label: 'item name'
+    group_it:
+      children:
+        - field_menu_item_price
+      parent_name: group_item_wrap
+      weight: 21
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: price
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+      label: 'item price'
+id: paragraph.menu_variants.default
+targetEntityType: paragraph
+bundle: menu_variants
+mode: default
+content:
+  field_menu_item:
+    weight: 21
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_menu_item_price:
+    weight: 22
+    label: hidden
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+hidden: {  }

@@ -1,0 +1,35 @@
+uuid: 62074e34-a4cc-42fb-9621-4d88e6950bbe
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:37f272cc-1083-4006-b63f-98319674af04'
+  module:
+    - block_class
+    - block_content
+    - system
+  theme:
+    - coffeeshop
+third_party_settings:
+  block_class:
+    classes: intro-wrap
+id: coffeenevertastedsogood
+theme: coffeeshop
+region: content
+weight: -9
+provider: null
+plugin: 'block_content:37f272cc-1083-4006-b63f-98319674af04'
+settings:
+  id: 'block_content:37f272cc-1083-4006-b63f-98319674af04'
+  label: 'Coffee never tasted so good!'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,9 @@
+uuid: 68e4dac9-6ad7-4ecb-a375-e95730631ef4
+langcode: en
+status: true
+dependencies: {  }
+id: menu_variants
+label: 'menu variants'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

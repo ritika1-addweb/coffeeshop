@@ -1,0 +1,28 @@
+uuid: 1b8f37b3-76ae-4e3b-9ce6-6c6d418f884f
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.location
+  module:
+    - block_class
+    - views
+  theme:
+    - coffeeshop
+third_party_settings:
+  block_class:
+    classes: location
+id: views_block__location_block_1
+theme: coffeeshop
+region: location
+weight: -8
+provider: null
+plugin: 'views_block:location-block_1'
+settings:
+  id: 'views_block:location-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility: {  }

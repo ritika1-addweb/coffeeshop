@@ -1,0 +1,8 @@
+uuid: 8b12ed02-4ca6-4562-b1c6-2b87984ada72
+langcode: en
+status: true
+dependencies: {  }
+id: testimonial
+label: 'testimonial left image'
+revision: 0
+description: ''

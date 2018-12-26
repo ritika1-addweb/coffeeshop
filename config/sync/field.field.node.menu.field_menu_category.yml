@@ -1,0 +1,29 @@
+uuid: df9f36e9-9357-4369-81e5-d818b94ed2f9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_menu_category
+    - node.type.menu
+    - taxonomy.vocabulary.menu_category
+id: node.menu.field_menu_category
+field_name: field_menu_category
+entity_type: node
+bundle: menu
+label: 'menu category'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      menu_category: menu_category
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

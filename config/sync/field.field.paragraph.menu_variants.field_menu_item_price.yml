@@ -1,0 +1,23 @@
+uuid: b9e3e4f8-ab4f-4fad-a3cc-65d464da3eaf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_menu_item_price
+    - paragraphs.paragraphs_type.menu_variants
+id: paragraph.menu_variants.field_menu_item_price
+field_name: field_menu_item_price
+entity_type: paragraph
+bundle: menu_variants
+label: 'menu item price'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: $
+  suffix: ''
+field_type: float

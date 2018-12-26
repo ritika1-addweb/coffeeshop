@@ -1,0 +1,165 @@
+uuid: 80a1da58-b0cb-41e0-a630-4fc5b1b86dbb
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.blog_lis
+    - field.field.node.blog.body
+    - field.field.node.blog.field_blog_date
+    - field.field.node.blog.field_blog_image
+    - node.type.blog
+  module:
+    - datetime
+    - ds
+    - field_group
+    - image
+    - text
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_reset
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+    regions:
+      ds_content:
+        - group_container
+        - field_blog_image
+        - node_title
+        - field_blog_date
+        - body
+        - node_link
+        - group_row
+        - group_col_md_4
+        - group_col_md_8
+    fields:
+      node_link:
+        plugin_id: node_link
+        weight: 5
+        label: hidden
+        formatter: default
+        settings:
+          'link text': 'Read more'
+          'link class': 'btn btn-outline btn-black'
+          wrapper: ''
+          class: ''
+      node_title:
+        plugin_id: node_title
+        weight: 2
+        label: hidden
+        formatter: default
+        settings:
+          link: true
+          wrapper: h2
+          class: ''
+  field_group:
+    group_container:
+      children:
+        - group_row
+      parent_name: ''
+      weight: 0
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: container
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+      label: container
+    group_col_md_4:
+      children:
+        - field_blog_image
+      parent_name: group_row
+      weight: 21
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: col-md-4
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+      label: col-md-4
+    group_col_md_8:
+      children:
+        - node_title
+        - field_blog_date
+        - body
+        - node_link
+      parent_name: group_row
+      weight: 22
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: col-md-8
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+      label: col-md-8
+    group_row:
+      children:
+        - group_col_md_4
+        - group_col_md_8
+      parent_name: group_container
+      weight: 20
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: row
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+      label: row
+id: node.blog.blog_lis
+targetEntityType: node
+bundle: blog
+mode: blog_lis
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    region: ds_content
+  field_blog_date:
+    weight: 3
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: long
+    third_party_settings: {  }
+    type: datetime_default
+    region: ds_content
+  field_blog_image:
+    weight: 1
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: ds_content
+hidden:
+  links: true

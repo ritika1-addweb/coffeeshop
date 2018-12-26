@@ -1,0 +1,89 @@
+uuid: 0ed27dcb-ff48-4a56-80d6-c4acda3ba89e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.menu_variants.field_menu_item
+    - field.field.paragraph.menu_variants.field_menu_item_price
+    - paragraphs.paragraphs_type.menu_variants
+  module:
+    - field_group
+    - text
+third_party_settings:
+  field_group:
+    group_item_wrap:
+      children:
+        - group_item_name
+        - group_item_price
+      parent_name: ''
+      weight: 0
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: each-item
+        element: div
+        show_label: false
+        label_element: h3
+        required_fields: true
+        attributes: ''
+        effect: none
+        speed: fast
+      label: 'item wrap'
+    group_item_name:
+      children:
+        - field_menu_item
+      parent_name: group_item_wrap
+      weight: 20
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: item-name
+        element: div
+        show_label: false
+        label_element: h3
+        required_fields: true
+        attributes: ''
+        effect: none
+        speed: fast
+      label: 'item name'
+    group_item_price:
+      children:
+        - field_menu_item_price
+      parent_name: group_item_wrap
+      weight: 21
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: price
+        element: div
+        show_label: false
+        label_element: h3
+        required_fields: true
+        attributes: ''
+        effect: none
+        speed: fast
+      label: 'item price'
+id: paragraph.menu_variants.default
+targetEntityType: paragraph
+bundle: menu_variants
+mode: default
+content:
+  field_menu_item:
+    weight: 21
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
+  field_menu_item_price:
+    weight: 22
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

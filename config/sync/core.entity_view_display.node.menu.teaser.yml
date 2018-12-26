@@ -1,0 +1,41 @@
+uuid: d0cd20a5-cfb7-4f8f-baf7-abcb3fbe352c
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.menu.field_menu_category
+    - field.field.node.menu.field_menu_image
+    - field.field.node.menu.field_menu_para
+    - image.style.large
+    - node.type.menu
+  module:
+    - entity_reference_revisions
+    - image
+    - user
+id: node.menu.teaser
+targetEntityType: node
+bundle: menu
+mode: teaser
+content:
+  field_menu_image:
+    type: image
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      image_style: large
+      image_link: ''
+    third_party_settings: {  }
+  field_menu_para:
+    type: entity_reference_revisions_entity_view
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+hidden:
+  field_menu_category: true
+  links: true

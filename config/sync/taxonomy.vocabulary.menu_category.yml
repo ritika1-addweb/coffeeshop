@@ -1,0 +1,9 @@
+uuid: d9d39362-1391-4996-a058-0626b2ffb98d
+langcode: en
+status: true
+dependencies: {  }
+name: 'Menu category'
+vid: menu_category
+description: ''
+hierarchy: 0
+weight: 0

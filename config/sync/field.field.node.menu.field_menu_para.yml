@@ -1,0 +1,31 @@
+uuid: e0afaeb8-28ee-42fa-b9b1-97fe8dbe7fef
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_menu_para
+    - node.type.menu
+    - paragraphs.paragraphs_type.menu_variants
+  module:
+    - entity_reference_revisions
+id: node.menu.field_menu_para
+field_name: field_menu_para
+entity_type: node
+bundle: menu
+label: 'menu para'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      menu_variants: menu_variants
+    target_bundles_drag_drop:
+      menu_variants:
+        enabled: true
+        weight: 2
+field_type: entity_reference_revisions

@@ -1,0 +1,21 @@
+uuid: 5786d485-e17a-4739-85a7-e58a8fbd95cd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_happy_hour
+    - node.type.location
+  module:
+    - text
+id: node.location.field_happy_hour
+field_name: field_happy_hour
+entity_type: node
+bundle: location
+label: 'HAPPY HOUR'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

@@ -1,0 +1,19 @@
+uuid: e01ad3a3-4096-49f9-b0d4-2d02e26118b5
+langcode: en
+status: true
+dependencies:
+  module:
+    - disqus
+    - node
+id: node.field_blog_comments
+field_name: field_blog_comments
+entity_type: node
+type: disqus_comment
+settings: {  }
+module: disqus
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
